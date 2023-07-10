@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Futuristic AI</title>
+    <link rel="icon" type="image/png" href="images/futuristic_ai_logo.png">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Roboto Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;400&family=Rock+Salt&family=Work+Sans&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- INT-TEL-INPUT CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" crossorigin="anonymous"></script>
+    <script defer src="js/contact.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo_name">
+            <img src="images/futuristic_ai_logo.png" alt="futuristic_ai_logo">
+            <p class="company_name">Futuristic AI</p>
+        </a>
+        <div class="nav_links">
+            <a href="index.html#products">PRODUCTS</a>
+            <a href="index.html#team">TEAM</a>
+            <a href="about.html">ABOUT</a>
+            <a class="contact_btn" href="contact.html">CONTACT US</a>
+        </div>
+    </nav>
+    <main>
+        <section id="intro">
+            <div>
+                <h1 class="animated_text">Contact us</h1>
+                <p class="animated_text">Thank you for visiting our website, and we appreciate your interest in our products/services. We strive to provide exceptional customer service and will make every effort to ensure your experience with us is positive. Don't hesitate to get in touch — we're here to help!</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="section_heading">Get in touch</h1>
+            <p class="section_text">
+                We'd love to hear from you! Our team is here to assist you with any questions, concerns, or feedback you may have. Please feel free to get in touch with us using the contact information provided below
+            </p>
+            <div class="contacts-container">
+                <div class="inner">
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span>
+                                <p class="contact-type">Phone number</p>
+                                <p class="contact">+234 9000453289</p>
+                            </span>
+                        </div>
+                        <div class="contact-detail">
+                            <div>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span>
+                                <p class="contact-type">Email</p>
+                                <a href="mailto:info@futuristicai.com" class="contact">mailto:info@futuristicai.com</a>
+                            </span>
+                        </div>
+                        <div class="contact-detail">
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <span>
+                                <p class="contact-type">Location</p>
+                                <p class="contact">Lagos, Nigeria</p>
+                            </span>
+                        </div>
+                    </div>
+                    <form target="_blank" id="contact_form" action="https://formsubmit.co/stickynotesapp605@gmail.com" method="POST" novalidate>
+                        <input type="hidden" name="_next" value="https://tourmaline-cannoli-83a6e1.netlify.app/thankyou.html">
+                        <input type="hidden" name="_subject" value="New Contact Form submission!">
+                        <div class="input-control">
+                            <input required type="text" placeholder="Name" name="name" id="name">
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="input-control">
+                            <input required type="email" placeholder="Email" name="email" id="email">
+                            <div class="error-msg"></div>
+                        </div>
+                        <input id="phone" type="tel" placeholder="Phone Number">
+                        <span id="valid-msg" class="hide"></span>
+                        <span id="error-msg" class="hide"></span>
+                        <div class="input-control">
+                            <textarea required placeholder="Your Message" name="message" id="message" cols="50" rows="10"></textarea>
+                            <div class="error-msg"></div>
+                        </div>
+                        <button type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div class="logo-contact">
+                <a href="index.html" class="logo">
+                    <img src="images/futuristic_ai_logo.png" alt="futuristic_ai_logo">
+                    <h3>Futuristic AI</h3>
+                </a>
+                <div class="contact">
+                    <span>Phone: +234 9000453289</span>
+                    <span>Email: info@futuristicai.com</span>
+                </div>
+            </div>
+            <div class="legal_social">
+                <div class="legal">
+                    <p>LEGAL</p>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="social_media">
+                    <p>FOLLOW US</p>
+                    <span class="socials">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <small>
+            All rights reserved, &copy;2023 Futuristic AI
+        </small>
+    </footer>
+</body>
+</html>

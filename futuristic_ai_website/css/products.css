@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: black;
+  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body .contact_btn, body nav .nav_links a.contact_btn {
+  background: blue;
+  width: fit-content;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.87rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+body nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+  background: #0000ff;
+  z-index: 5;
+}
+body nav .logo_name {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  margin: 0 0 0 3rem;
+  text-decoration: none;
+}
+body nav .logo_name img {
+  width: 4rem;
+  height: auto;
+}
+body nav .logo_name p {
+  font-weight: bold;
+  color: white;
+  font-size: 1.75rem;
+}
+body nav .nav_links {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+body nav .nav_links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.87rem;
+}
+body nav .nav_links a.contact_btn {
+  background: white;
+  color: black;
+}
+body .animated_text {
+  opacity: 0;
+  height: 0;
+  transform: translateY(50px);
+  transition-delay: 0.5s;
+  transition: ease 2s;
+}
+body .animated_text.animate {
+  opacity: 1;
+  transform: translateY(0);
+  height: auto;
+}
+body footer {
+  border-top: solid 1px #393939;
+  padding: 2rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  color: white;
+}
+body footer > div {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+body footer > div .logo-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+body footer > div .logo-contact .logo {
+  text-decoration: none;
+  color: white;
+}
+body footer > div .logo-contact img {
+  height: 80px;
+  width: auto;
+}
+body footer > div .logo-contact .contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.05rem;
+}
+body footer > div .legal_social {
+  display: flex;
+  column-gap: 12rem;
+}
+body footer > div .legal_social .legal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+body footer > div .legal_social .legal p {
+  font-weight: bold;
+}
+body footer > div .legal_social .legal a {
+  text-decoration: none;
+  color: white;
+}
+body footer > div .legal_social .social_media {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+body footer > div .legal_social .social_media p {
+  font-weight: bold;
+}
+body footer > div .legal_social .social_media .socials {
+  display: flex;
+  column-gap: 0.75rem;
+}
+body footer > div .legal_social .social_media .socials a {
+  color: white;
+  padding: 0.5rem 0.8rem;
+  background: #444;
+  border-radius: 50%;
+}
+body footer small {
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  body nav .nav_links {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=products.css.map */

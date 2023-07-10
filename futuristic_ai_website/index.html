@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Futuristic AI</title>
+    <link rel="icon" type="image/png" href="images/futuristic_ai_logo.png">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Roboto Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;400&family=Rock+Salt&family=Work+Sans&display=swap" rel="stylesheet">
+    <!-- Swiper JS and CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/home.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="./index.html" class="logo_name">
+            <img src="images/futuristic_ai_logo.png" alt="futuristic_ai_logo">
+            <p class="company_name">Futuristic AI</p>
+        </a>
+        <div class="nav_links">
+            <a href="#products">PRODUCTS</a>
+            <a href="index.html#team">TEAM</a>
+            <a href="about.html">ABOUT</a>
+            <a class="contact_btn" href="contact.html">CONTACT US</a>
+        </div>
+    </nav>
+    <main>
+        <section id="intro">
+            <div>
+                <h1 class="animated_text">Shaping the Future with Artificial Intelligence</h1>
+                <p class="animated_text">At Futuristic AI, we are pioneers in harnessing the power of artificial intelligence to shape industries and transform businesses. Our advanced solutions drive innovation, unleash creativity, and deliver exceptional results</p>
+                <a class="contact_btn animated_text" href="contact.html">CONTACT US</a>
+            </div>
+        </section>
+        <section id="products">
+            <h1 class="section_heading">Our Products</h1>
+            <div class="product">
+                <h1 class="product_name">
+                    MedBolt</h1>
+                <img class="product_image" src="images/facial_recognition.png" alt="">
+                <h2 class="product_header animated_text">Revolutionizing Healthcare</h2>
+                <p class="product_description animated_text">MedBolt is a game-changer in the healthcare sector, addressing the existing challenges faced by hospitals and medical practitioners in accessing and managing patient records.</p>
+                <a class="learn_more animated_text" href="medbolt.html">LEARN MORE</a>
+            </div>          
+        </section>
+        <section id="mission">
+            <h1 class="section_heading">Our Mission</h1>
+            <p class="description">Transforming Industries, Shaping the Future in Africa and Beyond<p>
+            <p class="our_mission">Futuristic AI, an African-based company, is dedicated to harnessing the power of artificial intelligence to revolutionize industries and drive business transformation. Our cutting-edge solutions drive innovation, ignite creativity, and deliver outstanding outcomes. With a focus on sectors such as healthcare, finance, art, and beyond, we aim to make a profound impact on industries within Africa and worldwide. Join us as we shape the future through the limitless potential of AI.</p>
+        </section>
+        <section id="team">
+            <h1 class="section_heading">Meet Our Team</h1>
+            <p class="team_mission">At Futuristic AI, we are proud to have a team of brilliant minds dedicated to revolutionizing healthcare through the power of artificial intelligence. Our diverse and talented group of professionals combines their expertise in medicine, engineering, data science, and technology to create innovative solutions that improve patient outcomes and reshape the future of healthcare.</p>
+            <div class="team swiper">
+                <div class="swiper-wrapper">
+                    <div class="container swiper-slide">
+                        <div class="team-member">
+                            <div class="front">
+                                <img loading="lazy" src="images/headshot-lovely-satisfied-religious-muslim-woman-with-gentle-smile-dark-healthy-skin-wears-scarf-head-isolated-white-background-removebg-preview 1.png" alt="black man">
+                                <p class="name">Alli Shakirat</p>
+                                <p class="role">Product Designer</p>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                            <div class="back">
+                                <p>I'm a passionate backend developer good with frameworks like Django and Laravel. I love learning new things.</p>
+                                <div class="socials">
+                                    <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-behance fa-lg"></i></a>
+                                </div>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container swiper-slide">
+                        <div class="team-member">
+                            <div class="front">
+                                <img loading="lazy" src="images/happy-black-woman-removebg-preview 1.png" alt="black woman">
+                                <p class="name">Jane Doe</p>
+                                <p class="role">Cloud Engineer</p>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                            <div class="back">
+                                <p>I'm a passionate backend developer good with frameworks like Django and Laravel. I love learning new things.</p>
+                                <div class="socials">
+                                    <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-github fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                                </div>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container swiper-slide">
+                        <div class="team-member">
+                            <div class="front">
+                                <img loading="lazy" src="images/headshot-lovely-satisfied-religious-muslim-woman-with-gentle-smile-dark-healthy-skin-wears-scarf-head-isolated-white-background-removebg-preview 1.png" alt="black muslimah">
+                                <p class="name">Aisha Mohammed</p>
+                                <p class="role">Data Analyst</p>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                            <div class="back">
+                                <p>I'm a passionate backend developer good with frameworks like Django and Laravel. I love learning new things.</p>
+                                <div class="socials">
+                                    <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-github fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                                </div>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container swiper-slide">
+                        <div class="team-member">
+                            <div class="front">
+                                <img loading="lazy" src="images/black-man-removebg-preview 1.png" alt="black man">
+                                <p class="name">John Doew</p>
+                                <p class="role">Frontend Developer</p>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                            <div class="back">
+                                <p>I'm a passionate backend developer good with frameworks like Django and Laravel. I love learning new things.</p>
+                                <div class="socials">
+                                    <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-github fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                                </div>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container swiper-slide">
+                        <div class="team-member">
+                            <div class="front">
+                                <img loading="lazy" src="images/tomi.jpg" alt="picture of Tomisin">
+                                <p class="name">Akinwande Tomisin</p>
+                                <p class="role">Fullstack Developer</p>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                            <div class="back">
+                                <p>I'm a passionate backend developer good with frameworks like Django and Laravel. I love learning new things.</p>
+                                <div class="socials">
+                                    <a href="https://mobile.twitter.com/tomisnakinwande" target="_blank">
+                                        <i class="fa-brands fa-twitter fa-lg"></i>
+                                    </a>
+                                    <a href="https://github.com/tomjames156/" target="_blank">
+                                        <i class="fa-brands fa-github fa-lg"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/tomisin-akinwande-981842247" target="_blank">
+                                        <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                                    </a>
+                                </div>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container swiper-slide">
+                        <div class="team-member">
+                            <div class="front">
+                                <img loading="lazy" src="images/happy-black-woman-removebg-preview 1.png" alt="black woman">
+                                <p class="name">Jane Doe</p>
+                                <p class="role">Cloud Engineer</p>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                            <div class="back">
+                                <p>I'm a passionate backend developer good with frameworks like Django and Laravel. I love learning new things.</p>
+                                <div class="socials">
+                                    <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-github fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-behance fa-lg"></i></a>
+                                </div>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container swiper-slide">
+                        <div class="team-member">
+                            <div class="front">
+                                <img loading="lazy" src="images/headshot-lovely-satisfied-religious-muslim-woman-with-gentle-smile-dark-healthy-skin-wears-scarf-head-isolated-white-background-removebg-preview 1.png" alt="black muslimah">
+                                <p class="name">Aisha Mohammed</p>
+                                <p class="role">Data Analyst</p>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                            <div class="back">
+                                <p>I'm a passionate backend developer good with frameworks like Django and Laravel. I love learning new things.</p>
+                                <div class="socials">
+                                    <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-github fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                                </div>
+                                <i class="fa-solid fa-rotate" onclick="rotate(this)"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+                <i class="swiper-button-prev fa-solid fa-2xl fa-arrow-left"></i>
+                <i class="swiper-button-next fa-solid fa-2xl fa-arrow-right"></i>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div class="logo-contact">
+                <a href="index.html" class="logo">
+                    <img src="images/futuristic_ai_logo.png" alt="futuristic_ai_logo">
+                    <h3>Futuristic AI</h3>
+                </a>
+                <div class="contact">
+                    <span>Phone: +234 9000453289</span>
+                    <span>Email: info@futuristicai.com</span>
+                </div>
+            </div>
+            <div class="legal_social">
+                <div class="legal">
+                    <p>LEGAL</p>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="social_media">
+                    <p>FOLLOW US</p>
+                    <span class="socials">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <small>
+            All rights reserved, &copy;2023 Futuristic AI
+        </small>
+    </footer>
+</body>
+</html>

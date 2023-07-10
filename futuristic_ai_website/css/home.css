@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: black;
+  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body .contact_btn, body main #products .product a.learn_more, body nav .nav_links a.contact_btn {
+  background: blue;
+  width: fit-content;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.87rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+body nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+  background: #0000ff;
+  z-index: 5;
+}
+body nav .logo_name {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  margin: 0 0 0 3rem;
+  text-decoration: none;
+}
+body nav .logo_name img {
+  width: 4rem;
+  height: auto;
+}
+body nav .logo_name p {
+  font-weight: bold;
+  color: white;
+  font-size: 1.75rem;
+}
+body nav .nav_links {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+body nav .nav_links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.87rem;
+}
+body nav .nav_links a.contact_btn, body nav .nav_links main #products .product a.learn_more, body main #products .product nav .nav_links a.learn_more {
+  background: white;
+  color: black;
+}
+body .animated_text {
+  opacity: 0;
+  height: 0;
+  transform: translateY(50px);
+  transition-delay: 0.5s;
+  transition: ease 2s;
+}
+body .animated_text.animate {
+  opacity: 1;
+  transform: translateY(0);
+  height: auto;
+}
+body footer {
+  border-top: solid 1px #393939;
+  padding: 2rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  color: white;
+}
+body footer > div {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+body footer > div .logo-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+body footer > div .logo-contact .logo {
+  text-decoration: none;
+  color: white;
+}
+body footer > div .logo-contact img {
+  height: 80px;
+  width: auto;
+}
+body footer > div .logo-contact .contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.05rem;
+}
+body footer > div .legal_social {
+  display: flex;
+  column-gap: 12rem;
+}
+body footer > div .legal_social .legal {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+body footer > div .legal_social .legal p {
+  font-weight: bold;
+}
+body footer > div .legal_social .legal a {
+  text-decoration: none;
+  color: white;
+}
+body footer > div .legal_social .social_media {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+body footer > div .legal_social .social_media p {
+  font-weight: bold;
+}
+body footer > div .legal_social .social_media .socials {
+  display: flex;
+  column-gap: 0.75rem;
+}
+body footer > div .legal_social .social_media .socials a {
+  color: white;
+  padding: 0.5rem 0.8rem;
+  background: #444;
+  border-radius: 50%;
+}
+body footer small {
+  color: white;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  body nav .nav_links {
+    display: none;
+  }
+}
+body main {
+  margin-top: -30px;
+  color: white;
+}
+body main #intro {
+  height: 994px;
+  background-image: url("../images/background_img.png");
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main #intro div {
+  display: flex;
+  width: 60%;
+  margin: -8rem 2rem 0 0;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+body main #intro div h1 {
+  font-size: 4.5rem;
+  width: 100%;
+}
+body main #intro div p {
+  width: 65%;
+  line-height: 1.3rem;
+  font-size: 1.15rem;
+}
+body main #products {
+  width: 70%;
+  margin: 0 auto;
+}
+body main #products .section_heading {
+  font-size: 2.5rem;
+}
+body main #products h1 {
+  text-align: center;
+}
+body main #products .product {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-top: 6rem;
+}
+body main #products .product .product_name {
+  color: #00F;
+  font-size: 6rem;
+}
+@keyframes flash {
+  from {
+    transform: translateX(-500px);
+    opacity: 0.75;
+    color: #b1f2ff;
+    text-shadow: -50px 0 15px white;
+  }
+  to {
+    color: #00f;
+    transform: translateX(0px);
+    opacity: 1;
+    text-shadow: none;
+  }
+}
+body main #products .product .product_name.animate {
+  transition: text-shadow ease-out;
+  animation-name: flash;
+  animation-duration: 400ms;
+}
+body main #products .product img {
+  width: 100%;
+  text-align: center;
+}
+body main #products .product .product_header {
+  font-size: 2.5rem;
+}
+body main #products .product .product_description {
+  width: 45%;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+body main #products .product h2, body main #products .product p, body main #products .product a {
+  margin-left: 0.5rem;
+}
+body main #mission {
+  margin: 8rem auto;
+  width: 82%;
+  text-align: center;
+}
+body main #mission .section_heading {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+body main #mission .description {
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+}
+body main #mission .our_mission {
+  width: 100%;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+body main #team {
+  margin: 8rem auto;
+  text-align: center;
+}
+body main #team .section_heading {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+body main #team .team_mission {
+  width: 82%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+body main #team .team {
+  width: 100%;
+  margin: 4rem 0 0 0;
+  padding: 0 2.55rem;
+}
+body main #team .team .container {
+  height: 20rem;
+  margin: 1rem 0 0 0;
+  perspective: 800px;
+  background: black;
+}
+body main #team .team .team-member {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  transform: rotate(0);
+  transition: transform 1500ms;
+  cursor: context-menu;
+  transform-style: preserve-3d;
+}
+body main #team .team .team-member .front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5rem;
+  background: #393939;
+  padding: 3rem 0 0 0;
+  backface-visibility: hidden;
+}
+body main #team .team .team-member .front img {
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+  object-fit: cover;
+}
+body main #team .team .team-member .front .name {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.15rem 0;
+}
+body main #team .team .team-member .front .role {
+  font-size: 0.9rem;
+}
+body main #team .team .team-member .front i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #d3d3d3;
+  cursor: pointer;
+  z-index: 20;
+}
+body main #team .team .team-member .front i:hover {
+  color: white;
+}
+body main #team .team .team-member .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5rem;
+  background: #393939;
+  padding: 3rem 0.5rem 0 0.5rem;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main #team .team .team-member .back p {
+  color: white;
+}
+body main #team .team .team-member .back p::before {
+  content: '" ';
+}
+body main #team .team .team-member .back p::after {
+  content: ' "';
+}
+body main #team .team .team-member .back .socials {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 1.5rem;
+  column-gap: 0.5rem;
+}
+body main #team .team .team-member .back .socials a {
+  color: white;
+  transition: all ease 0.1s;
+}
+body main #team .team .team-member .back .socials a:hover {
+  color: #d3d3d3;
+}
+body main #team .team .team-member .back .fa-rotate {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  cursor: pointer;
+  color: #d3d3d3;
+}
+body main #team .team .team-member .back .fa-rotate:hover {
+  color: white;
+}
+body main #team .team .team-member.show_back {
+  transform: rotateY(180deg);
+}
+body main #team .swiper-wrapper {
+  padding: 0 0 3rem 0;
+}
+body main #team .swiper-button-prev {
+  left: 0.25rem;
+}
+body main #team .swiper-button-next {
+  right: 0.25rem;
+}
+body main #team .swiper-button-prev, body main #team .swiper-button-next {
+  color: white;
+}
+body main #team .swiper-button-prev::after, body main #team .swiper-button-next::after {
+  content: "";
+  width: 0;
+}
+body main #team .swiper-pagination-bullet {
+  background: #ffffff;
+}
+
+/*# sourceMappingURL=home.css.map */
